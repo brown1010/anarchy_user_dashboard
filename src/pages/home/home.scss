@@ -1,0 +1,126 @@
+.home {
+    display: flex;
+    background-color: rgb(244, 244, 244);
+  
+    .homeContainer {
+      flex: 6;
+  
+      .widgets,
+      .charts {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+      }
+  
+      .charts {
+        padding: 5px 20px;
+      }
+
+      .headingContainer{
+        // padding: 20px;
+        margin: 20px;
+        margin-top: 0;
+
+        .mainTitle{
+          padding: 20px;
+          font-size: 24px;
+          color: #7451f8;
+          font-weight: 500;
+        }
+      }
+  
+      .listContainer {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+  
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    // border: 0.5px solid lightgray;
+    padding: 3px;
+    padding-top: 0;
+
+    input {
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 10px;
+      width: 60%;
+      height: 2.5em;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    .searchIconGroup{
+      position:absolute;
+      display: flex;
+      font-size: 12px;
+      justify-content: center;
+      justify-items: center;
+
+      .searchIcon{
+        font-size: 15px;
+        margin-right: 6px;
+        margin-left: 6px;
+      }
+    }
+
+    .submit{
+      display: flex;
+      height: 3em;
+      align-items: center;
+      background-color: #7451f8;
+      border: none;
+      margin-left: 2em;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      
+      :hover{
+        background-color: #5b3ec7;
+      }
+      .add{
+        font-size: 18px;
+      }
+    }
+
+    .sort{
+      margin-left: 2em;
+      cursor: pointer;
+
+      p{
+        display: flex;
+        align-items: center;
+
+        .sortIcon{
+          font-size: 13px;
+        }
+      }
+      .sortOption{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+      }
+    }
+  }
+  
